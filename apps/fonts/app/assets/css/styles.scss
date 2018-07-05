@@ -1,0 +1,159 @@
+@import './variables';
+@import '../../../../public/assets/css/mixins';
+@import url('https://fonts.googleapis.com/css?family=Lora:400i|Roboto:400,700');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000;
+  @include font-family;
+  color: #fff;
+
+  .layout {
+    @include layout();
+
+    &--wrap {
+      flex-wrap: wrap;
+    }
+
+    &--align-center {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    &--space-between {
+      justify-content: space-between;
+    }
+
+    &--justify-center {
+      justify-content: center;
+    }
+
+    &.column {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
+    &.row {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+
+    .flex {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+    }
+  }
+
+  .full-height {
+    height: 100%;
+  }
+
+  .full-width {
+    width: 100%;
+
+    &--correct {
+      width: calc(100% - 74px);
+    }
+  }
+
+  .text--ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .text--underline {
+    text-decoration: underline;
+  }
+
+  .text--center {
+    text-align: center;
+  }
+
+  .text--left {
+    text-align: left;
+  }
+
+  .text--bold {
+    font-weight: bold;
+  }
+
+  .text--green {
+    color: #00C853
+  }
+
+  .slide-fade-enter-active {
+    transition: all .3s ease;
+  }
+
+  .slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+
+  .slide-fade-enter, .slide-fade-leave-to
+    /* .slide-fade-leave-active до версии 2.1.8 */
+  {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+
+  .fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */
+  {
+    opacity: 0;
+  }
+
+  .pa-10 {
+    padding: 10px;
+  }
+
+  .spacer {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+
+  /**
+  * Custom scrollbars
+  */
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+    background-color: #000;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #424242;
+
+    &:hover {
+      background-color: #616161;
+    }
+  }
+}
+
+body {
+  scrollbar-base-color: #000;
+  scrollbar-face-color: #424242;
+  scrollbar-3dlight-color: #000;
+  scrollbar-highlight-color: #000;
+  scrollbar-track-color: #000;
+  scrollbar-arrow-color: #424242;
+  scrollbar-shadow-color: #000;
+  scrollbar-dark-shadow-color: #000;
+  -ms-overflow-style: auto;
+}

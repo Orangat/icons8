@@ -1,0 +1,9 @@
+@mixin text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin transition($property) {
+  transition: $property 0.25s ease-in;
+}

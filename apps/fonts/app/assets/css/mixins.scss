@@ -1,0 +1,17 @@
+@mixin delay($delay: .3s) {
+  -webkit-transition: all $delay;
+  -moz-transition: all $delay;
+  -o-transition: all $delay;
+  transition: all $delay;
+}
+
+@mixin layout() {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}

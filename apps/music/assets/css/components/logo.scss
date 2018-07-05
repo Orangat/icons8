@@ -1,0 +1,24 @@
+.logo {
+  width: 98px;
+  height: 32px; 
+  fill: white;
+  @include transition(fill);
+
+  &:hover{
+    fill: $color-link-hover;
+  }
+
+  &:active{
+    fill: $color-link-active;
+  }
+
+  // @media(max-width: $responsive-mobile) {
+  //   // width: 48px;
+  //   // height: 16px;
+  // }
+}
+
+.logo--black {
+  fill: $color-body;
+}
+

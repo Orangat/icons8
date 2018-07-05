@@ -1,0 +1,17 @@
+@import '../../../public/assets/css/public.scss';
+
+@import 'variables';
+
+.app {
+  position: absolute;
+  top: 57px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.transparent-background {
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScyOCcgaGVpZ2h0PScyOCcgc3R5bGU9J2JhY2tncm91bmQ6I2ZmZic+PHBhdGggZD0nbTAgMGgxNHYxNEgwem0xNCAxNGgxNHYxNGgtMTR6JyBmaWxsPScjZjJmMmYyJyAvPjwvc3ZnPg==');
+}

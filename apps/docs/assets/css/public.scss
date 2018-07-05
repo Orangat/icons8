@@ -1,0 +1,44 @@
+@import '../../../src/assets/css/variables';
+
+.menu {
+  position: fixed;
+  width: 220px;
+  float: left;
+  height: 100vh;
+
+  & > h4 {
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $color-grey-light;
+  }
+}
+
+.logo {
+  width: 5rem;
+  margin: 0 auto;
+}
+
+.page {
+  padding: 1rem 20px 10rem 240px;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 0 0 30rem;
+  max-width: 960px;
+}
+
+.docs {
+  margin-bottom: 5rem;
+
+  & > h2 {
+    text-align: left;
+    font-size: 2.25rem;
+    color: $color-font;
+  }
+
+  & > h3 {
+    margin-top: 3rem;
+  }
+}

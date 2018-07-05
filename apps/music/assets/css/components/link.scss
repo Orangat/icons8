@@ -1,0 +1,16 @@
+.link {
+  position: relative;
+  color: $color-link;
+  @include transition(all);
+
+  &:hover{
+    color: $color-link-hover;
+  }
+  &:active {
+    color: $color-link-active;
+  }
+
+  &.is-white {
+    color: white;
+  }
+}

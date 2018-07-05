@@ -1,0 +1,16 @@
+.icon {
+  transition: fill 0.3s ease;
+  cursor: pointer;
+
+  &:hover{
+    fill: $color-link-hover;
+  }
+  &:active {
+    fill: $color-link-active;
+  }
+}
+
+.icon-download {
+  width: 20px;
+  height: 16px;
+}

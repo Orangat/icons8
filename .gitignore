@@ -1,0 +1,27 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+# JetBrains files
+.idea
+
+# local envs
+config/local.env.js
+
+# webpack cache
+.cache
+
+# project cache
+cache/*.json
+
+.DS_Store
+*.DS_Store
+

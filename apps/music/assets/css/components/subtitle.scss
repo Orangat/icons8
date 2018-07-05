@@ -1,0 +1,27 @@
+.subtitle {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+
+  @media(max-width: $responsive-mobile){
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+.subtitle--bottom-indent{
+  margin-bottom: 45px;
+}
+
+.subtitle--mobile-hidden{
+  @media(max-width: $responsive-mobile) {
+    display: none;
+  }
+}
+
+.subtitle--mobile{
+  display: none;
+  @media(max-width: $responsive-mobile) {
+    display: block;
+  }
+}

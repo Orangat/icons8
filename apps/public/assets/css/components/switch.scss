@@ -1,0 +1,72 @@
+@import '../variables';
+
+$switch-width: 3rem;
+$switch-height: 1.5rem;
+
+$switch-mini-width: 1.75rem;
+$switch-mini-height: 1rem;
+
+.switch {
+  position: absolute;
+  opacity: 0;
+
+  & + label {
+    cursor: pointer;
+    position: relative;
+    padding-left: $switch-width + 0.5rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: 0;
+      width: 3rem;
+      height: $switch-height;
+      border-radius: $switch-height;
+      background: $color-grey;
+      box-shadow: inset 0 2px 3px rgba(0,0,0,0.2);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 1px;
+      left: 2px;
+      width: $switch-height - 0.25rem;
+      height: $switch-height - 0.25rem;
+      border-radius: $switch-height - 0.25rem;
+      background: #FFF;
+      box-shadow: 0 2px 5px rgba(0,0,0,.3);
+      transition: all .2s;
+    }
+  }
+
+  &:checked + label {
+    &:before {
+      background: #9FD468;
+    }
+    &:after {
+      left: $switch-height - 0.125rem;
+    }
+  }
+
+  &.is-mini + label {
+    padding-left: $switch-mini-width + 0.5rem;
+    &:before {
+      top: 4px;
+      width: 1.75rem;
+      height: $switch-mini-height;
+      border-radius: $switch-mini-height;
+    }
+    &:after {
+      top: 6px;
+      width: $switch-mini-height - 0.25rem;
+      height: $switch-mini-height - 0.25rem;
+      border-radius: $switch-mini-height - 0.25rem;
+    }
+  }
+  &.is-mini:checked + label {
+    &:after {
+      left: $switch-mini-height - 0.125rem;
+    }
+  }
+}

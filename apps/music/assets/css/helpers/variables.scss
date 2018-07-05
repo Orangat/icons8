@@ -1,0 +1,18 @@
+$color-red: #F72D11;
+$color-blue: #0084e2;
+$color-lightergrey: #E0E0E0;
+$color-placeholder: #999999;
+
+$color-btn-hover: #333333;
+
+$color-link: $color-blue;
+$color-link-hover: lighten($color-blue, 12%);
+$color-link-active: lighten($color-blue, 12%);
+$color-link-visited: lighten($color-blue, 12%);
+
+$color-body: #000;
+
+$responsive-mobile: 470px;
+$responsive-tablet: 768px;
+$responsive-desktop: 1024px;
+$responsive-desktop-large: 1200px;
